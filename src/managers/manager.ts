@@ -7,7 +7,7 @@ class Manager {
 
     public readFile<T>(): T[] {
         try {
-            if (!fs.existsSync(this.path)) throw new Error("Invalid path");
+            if (!fs.existsSync(this.path)) this.saveFile([]);
             const data = fs.readFileSync(this.path, "utf-8");
             return JSON.parse(data) as T[];
         } catch (error: any) {
