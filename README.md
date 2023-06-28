@@ -9,7 +9,6 @@ Comando de instalación del ejercicio
 ```bash
 git clone https://github.com/Aonik10/1-coderhouse-backend-final.git
 cd "1-coderhouse-backend-final"
-npm install ts-node
 npm install
 npm run dev
 ```
